@@ -21,7 +21,7 @@ def get_unique_industries(path: str) -> List[str]:
     industries = set()
     for row in read(path):
         if row['industry']:
-          industries.add(row["industry"])
+            industries.add(row["industry"])
     return industries
 
 

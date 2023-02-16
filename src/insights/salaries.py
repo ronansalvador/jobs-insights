@@ -21,8 +21,9 @@ def get_max_salary(path: str) -> int:
     salaries = set()
     for row in read(path):
         if row['max_salary'].isdigit():
-          salaries.add(int(row["max_salary"]))
+            salaries.add(int(row["max_salary"]))
     return max(salaries)
+
 
 def get_min_salary(path: str) -> int:
     """Get the minimum salary of all jobs
@@ -43,7 +44,7 @@ def get_min_salary(path: str) -> int:
     salaries = set()
     for row in read(path):
         if row['min_salary'].isdigit():
-          salaries.add(int(row["min_salary"]))
+            salaries.add(int(row["min_salary"]))
     return min(salaries)
 
 
